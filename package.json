@@ -1,0 +1,14 @@
+{
+    "name": "handle_incoming_call",
+    "version": "1.0.0",
+    "description": "Node.js on Docker",
+    "author": "Catalin Vasile <catalin.vasile@sinch.com>",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "dependencies": {
+      "express": "^4.17.2",
+      "ngrok": "^4.3.0"
+    }
+  }
