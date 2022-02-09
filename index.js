@@ -10,10 +10,10 @@ app.use(express.json());
 
 app.post('/incoming-call', async (req, res) => {
   let requestBody = req.body;
-  let eventname = req.body.event;
+  let eventName = req.body.event;
   let svamlResponse;
   console.log(requestBody);
-  switch (eventname) {
+  switch (eventName) {
     case 'ice':
       svamlResponse = {
       instructions: [
@@ -39,7 +39,6 @@ app.post('/incoming-call', async (req, res) => {
   }
 });
 
-// Start the server
 app.listen(PORT, async () => {
   const url = await ngrok.connect(PORT);
   console.log(`Node.js local server is publicly-accessible at ${url}/incoming-call`);
