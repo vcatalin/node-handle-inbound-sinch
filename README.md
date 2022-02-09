@@ -2,6 +2,11 @@
 
 This project will run an express server and generate an ngrok URL that can be added on the Sinch dashboard application's configured callback URL.
 
+## Requirements
+
+* [Docker](https://docs.docker.com/get-docker/)
+* [Makefile](https://makefiletutorial.com) - optional
+
 ## How to start the server and configure the sinch callback url
 
 Use the `make` commands bellow and follow the next steps:
